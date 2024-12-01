@@ -9,7 +9,7 @@ class Location {
 		this.location = location;
 		this.num = num;
 
-		this.weatherData = '';
+		this.weatherData = 'dc8e3f9ede014ea6e603de60104ecf57';
 		this.lon;
 		this.lat;
 		this.temperatureMin;
@@ -19,7 +19,7 @@ class Location {
 		this.humidity;
 		this.wind;
 
-		this.timeData = '';
+		this.timeData = 'manav_was';
 		this.time;
 		this.timezone;
 		this.sunrise;
