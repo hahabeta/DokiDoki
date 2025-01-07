@@ -9,7 +9,7 @@ class Location {
 		this.location = location;
 		this.num = num;
 
-		this.weatherData = '';
+		this.weatherData = 'dc8e3f9ede014ea6e603de60104ecf57';
 		this.lon;
 		this.lat;
 		this.temperatureMin;
@@ -19,7 +19,7 @@ class Location {
 		this.humidity;
 		this.wind;
 
-		this.timeData = '';
+		this.timeData = 'manav_was';
 		this.time;
 		this.timezone;
 		this.sunrise;
@@ -117,7 +117,7 @@ class Location {
 //get weather data from openweathermap
 function loadWeather(loc, callback) {
 	var xhr = new XMLHttpRequest();
-	var link = 'http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=dc8e3f9ede014ea6e603de60104ecf57' + weatherKey;
+	var link = 'http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=' + weatherKey;
 
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -149,7 +149,7 @@ function loadWeather(loc, callback) {
 //get time data from geonames
 function loadTime(lon, lat, callback) {
 	var xhr = new XMLHttpRequest();
-	var link = ' http://api.geonames.org/timezoneJSON?lat=' + lat + '&lng=' + lon + '&username=manav_was' + timeKey;
+	var link = ' http://api.geonames.org/timezoneJSON?lat=' + lat + '&lng=' + lon + '&username=' + timeKey;
 
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
