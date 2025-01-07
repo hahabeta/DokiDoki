@@ -1,16 +1,16 @@
 //-------SETUP
 
 //name, location, number
-var oneLoc = new Location(firstPerson, firstLocation, 'one'); //first person's name as string, location (City, Country) as string
+var oneLoc = new Location(Manav, Tokyo japan, 'one'); //first person's name as string, location (City, Country) as string
 
 //name, location, number
-var twoLoc = new Location(secondPerson, secondLocation, 'two'); //first person's name as string, location (City, Country) as string
+var twoLoc = new Location(Clefairy, Delhi india, 'two'); //first person's name as string, location (City, Country) as string
 
 //last day of contact (year, month, day)
-var timeLeaveStamp = new Date(2020, 01, 01);
+var timeLeaveStamp = new Date(2025, 05, 01);
 
 //first day of renewed contact (year, month, day)
-var timeMeetStamp = new Date(2024, 11, 25);
+var timeMeetStamp = new Date(2026, 05, 25);
 
 //earliest and latest time appropirate for call
 var earliestCall = 8;
