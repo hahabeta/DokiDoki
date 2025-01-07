@@ -117,7 +117,7 @@ class Location {
 //get weather data from openweathermap
 function loadWeather(loc, callback) {
 	var xhr = new XMLHttpRequest();
-	var link = 'http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=' + weatherKey;
+	var link = 'http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=dc8e3f9ede014ea6e603de60104ecf57' + weatherKey;
 
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -149,7 +149,7 @@ function loadWeather(loc, callback) {
 //get time data from geonames
 function loadTime(lon, lat, callback) {
 	var xhr = new XMLHttpRequest();
-	var link = ' http://api.geonames.org/timezoneJSON?lat=' + lat + '&lng=' + lon + '&username=' + timeKey;
+	var link = ' http://api.geonames.org/timezoneJSON?lat=' + lat + '&lng=' + lon + '&username=manav_was' + timeKey;
 
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
